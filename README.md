@@ -23,7 +23,9 @@ in this Rercovery model , transaction logs will be growing untill the limit defi
 you can't take transaction log backup without first making a full data backup.
 ## steps to solve the issue
 when we check our Database recovery  model , we found it **Full Recovery Model** so we will solve this matter
-
+we have two solutions here :-
+if you don;t need the logs , just change the database recovery model to simple , and the transaction logs will be truncated.
+or if you need the logs then continue the steps below
 ### 1. take full data backup
 - make a full data backup as shown below
 ![image](https://github.com/user-attachments/assets/ca99b589-7f31-4ee8-b655-559d484de21b)
