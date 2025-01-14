@@ -14,7 +14,8 @@ or untill it reachs **2097 GB**
 ![image](https://github.com/user-attachments/assets/38de1861-af3d-451a-b838-327f8c0a95ba)
 - you can check and change your DB Recovermodel by selecting rightclick the Database and select **properties** the select **option** from the left menu and you can see the recover model in right panel
 
-###  Full recovery model
-
+###  Simple recovery model
+from it's name , if you have this Model , you will never face an issue of transaction log grough , since basically you have only transaction logs for the current transactions.
+once comited , the logs will be truncated.But this recovery model is not recomended for critical applications since data recovery only avialable through Data backup , not Logs Backup.
 
 
