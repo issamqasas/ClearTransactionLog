@@ -34,7 +34,7 @@ if you don;t need the logs , just do the following
 
 ```sql
         ALTER DATABASE testdb
-		SET RECOVERY SIMPLE
+	SET RECOVERY SIMPLE
 
         GO
 
@@ -43,11 +43,10 @@ if you don;t need the logs , just do the following
         GO
 
         ALTER DATABASE testdb
-		SET RECOVERY FULL
-
+	SET RECOVERY FULL
 ```
 
-    # Solution  2 :- logs data is important
+# Solution  2 :- logs data is important
 if you need the logs then continue the steps below
 ### 1. take full data backup
 - make a full data backup as shown below
