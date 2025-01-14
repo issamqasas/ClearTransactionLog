@@ -16,6 +16,12 @@ or untill it reachs **2097 GB**
 
 ###  Simple recovery model
 from it's name , if you have this Model , you will never face an issue of transaction log grough , since basically you have only transaction logs for the current transactions.
-once comited , the logs will be truncated.But this recovery model is not recomended for critical applications since data recovery only avialable through Data backup , not Logs Backup.
+once commited , the logs will be truncated.But this recovery model is not recomended for critical applications since data recovery only avialable through Data backup , not Logs Backup.
+### Full Recovery model
+in this Rercovery model , transaction logs will be growing untill the limit defined , or until filling the Hardsisk , the only solution is to make a logs backup, then transaction logs will be trancated.
+- #**Note:-**
+you can't take transaction log backup without first making a full data backup.
+### steps to solve the issue
+## take full data backup
 
 
