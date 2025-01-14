@@ -24,8 +24,16 @@ you can't take transaction log backup without first making a full data backup.
 ## steps to solve the issue
 when we check our Database recovery  model , we found it **Full Recovery Model** so we will solve this matter
 we have two solutions here :-
-if you don;t need the logs , just change the database recovery model to simple , and the transaction logs will be truncated then go to step 3
-or if you need the logs then continue the steps below
+#Sloution  1 :- logs data is not important
+
+if you don;t need the logs , just do the following
+1. change the database recovery model to simple
+2. the transaction logs will be truncated automatically
+3.  shrink the log file
+4.  change the database recovery model to full again
+
+   #Sloution  2 :- logs data is important
+if you need the logs then continue the steps below
 ### 1. take full data backup
 - make a full data backup as shown below
 ![image](https://github.com/user-attachments/assets/ca99b589-7f31-4ee8-b655-559d484de21b)
@@ -45,6 +53,9 @@ BACKUP LOG testdb to disk= 'C:\issam\data backup\testdb_logs_usingscript.back'
 ### 3. shrink transaction log
 select the database 
 ![image](https://github.com/user-attachments/assets/c4d113d3-4b6f-41ce-9b39-9234e231153b)
+
+then select the file type :- log
+![image](https://github.com/user-attachments/assets/e0b9c035-b830-4950-8ba7-23115a1a169a)
 
 
 
