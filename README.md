@@ -24,7 +24,7 @@ you can't take transaction log backup without first making a full data backup.
 ## steps to solve the issue
 when we check our Database recovery  model , we found it **Full Recovery Model** so we will solve this matter
 we have two solutions here :-
-#Sloution  1 :- logs data is not important
+# Solution  1 :- logs data is not important
 
 if you don;t need the logs , just do the following
 1. change the database recovery model to simple
@@ -32,7 +32,7 @@ if you don;t need the logs , just do the following
 3.  shrink the log file
 4.  change the database recovery model to full again
 
-   #Sloution  2 :- logs data is important
+    # Solution  2 :- logs data is important
 if you need the logs then continue the steps below
 ### 1. take full data backup
 - make a full data backup as shown below
