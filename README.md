@@ -9,10 +9,10 @@ as you can see the Database log seems to be higher that the Data itself, accordi
 or untill it reachs **2097 GB**
 ![image](https://github.com/user-attachments/assets/4ade4f16-6e7c-4e1b-9551-c94bd573eabc)
 ## Recovery  Models
--before solving such an issue , you have to check your Database Recovery Model , since the solution depends on your Database Recovery Model
--When you create a new Database , your recovery model will be by default the same Recovery model defined in the System model DB 
+- before solving such an issue , you have to check your **Database Recovery Model** , since the solution depends on your Database Recovery Model
+- When you create a new Database , your recovery model will be by default the same Recovery model defined in the System **model** DB 
 ![image](https://github.com/user-attachments/assets/38de1861-af3d-451a-b838-327f8c0a95ba)
--you can check your DB Recovermodel by selecting rightclick the Database and select **properties** the select **option** from the left menu and you can see the recover model in right panel
+- you can check your DB Recovermodel by selecting rightclick the Database and select **properties** the select **option** from the left menu and you can see the recover model in right panel
 
 ###  Simple recovery model
 
