@@ -12,9 +12,9 @@ or untill it reachs **2097 GB**
 - before solving such an issue , you have to check your **Database Recovery Model** , since the solution depends on your Database Recovery Model
 - When you create a new Database , your recovery model will be by default the same Recovery model defined in the System **model** DB 
 ![image](https://github.com/user-attachments/assets/38de1861-af3d-451a-b838-327f8c0a95ba)
-- you can check your DB Recovermodel by selecting rightclick the Database and select **properties** the select **option** from the left menu and you can see the recover model in right panel
+- you can check and change your DB Recovermodel by selecting rightclick the Database and select **properties** the select **option** from the left menu and you can see the recover model in right panel
 
-###  Simple recovery model
+###  Full recovery model
 
 
 
