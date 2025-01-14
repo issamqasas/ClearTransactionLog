@@ -38,6 +38,8 @@ use this script
 ```sql
 BACKUP LOG testdb to disk= 'C:\issam\data backup\testdb_logs_usingscript.back'
 ```
+![image](https://github.com/user-attachments/assets/af6fb0ef-e80c-4715-b0d0-ffd2222debec)
+
 
 
 
