@@ -32,6 +32,21 @@ if you don;t need the logs , just do the following
 3.  shrink the log file
 4.  change the database recovery model to full again
 
+```sql
+        ALTER DATABASE testdb
+		SET RECOVERY SIMPLE
+
+        GO
+
+        DBCC SHRINKFILE (testdb_log, 1)
+
+        GO
+
+        ALTER DATABASE testdb
+		SET RECOVERY FULL
+
+```
+
     # Solution  2 :- logs data is important
 if you need the logs then continue the steps below
 ### 1. take full data backup
