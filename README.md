@@ -33,8 +33,11 @@ or using the folloiwng script
    BACKUP DATABASE testdb TO DISK = 'C:\issam\data backup\testdb_usingscript.back'
 ```
 ![image](https://github.com/user-attachments/assets/e65b2d38-ea10-4984-8ba9-bbcd235fa588)
-
-
+### 2. take transaction log backup
+use this script 
+```sql
+BACKUP LOG testdb to disk= 'C:\issam\data backup\testdb_logs_usingscript.back'
+```
 
 
 
