@@ -21,7 +21,19 @@ once commited , the logs will be truncated.But this recovery model is not recome
 in this Rercovery model , transaction logs will be growing untill the limit defined , or until filling the Hardsisk , the only solution is to make a logs backup, then transaction logs will be trancated.
 - #**Note:-**
 you can't take transaction log backup without first making a full data backup.
-### steps to solve the issue
-## take full data backup
+## steps to solve the issue
+when we check our Database recovery  model , we found it **Full Recovery Model** so we will solve this matter
+
+### 1. take full data backup
+- make a full data backup as shown below
+![image](https://github.com/user-attachments/assets/ca99b589-7f31-4ee8-b655-559d484de21b)
+or using the folloiwng script
+```sql
+   BACKUP DATABASE testdb TO DISK = "c:\issam\backup\testdb_back.bak"
+
+
+```
+
+
 
 
