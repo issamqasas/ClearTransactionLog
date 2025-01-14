@@ -27,12 +27,13 @@ when we check our Database recovery  model , we found it **Full Recovery Model**
 ### 1. take full data backup
 - make a full data backup as shown below
 ![image](https://github.com/user-attachments/assets/ca99b589-7f31-4ee8-b655-559d484de21b)
+
 or using the folloiwng script
 ```sql
-   BACKUP DATABASE testdb TO DISK = "c:\issam\backup\testdb_back.bak"
-
-
+   BACKUP DATABASE testdb TO DISK = 'C:\issam\data backup\testdb_usingscript.back'
 ```
+![image](https://github.com/user-attachments/assets/e65b2d38-ea10-4984-8ba9-bbcd235fa588)
+
 
 
 
