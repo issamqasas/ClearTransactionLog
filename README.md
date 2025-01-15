@@ -69,7 +69,8 @@ select the database
 ![image](https://github.com/user-attachments/assets/c4d113d3-4b6f-41ce-9b39-9234e231153b)
 
 then select the file type :- log
-![image](https://github.com/user-attachments/assets/e0b9c035-b830-4950-8ba7-23115a1a169a)
+![image](https://github.com/user-attachments/assets/1b115d61-495f-4d9b-9230-f530e7011167)
+
 
 
 
