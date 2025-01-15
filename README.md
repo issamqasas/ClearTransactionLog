@@ -75,7 +75,7 @@ SELECT name FROM sys.master_files WHERE type_desc = 'LOG'
 DBCC SHRINKFILE (AIMSPRODWB_log, 3)
         
 ```
-#References
+# References
 - https://www.mssqltips.com/tutorial/how-to-shrink-the-transaction-log/
 - https://www.sqlshack.com/sql-server-transaction-log-backup-truncate-and-shrink-operations/
 
