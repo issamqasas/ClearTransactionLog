@@ -66,12 +66,18 @@ BACKUP LOG testdb to disk= 'C:\issam\data backup\testdb_logs_usingscript.back'
 
 ### 3. shrink transaction log
 select the database 
-![image](https://github.com/user-attachments/assets/c4d113d3-4b6f-41ce-9b39-9234e231153b)
-
 then select the file type :- log
 ![image](https://github.com/user-attachments/assets/1b115d61-495f-4d9b-9230-f530e7011167)
+ or using the script 
+ ```sql
+SELECT name FROM sys.master_files WHERE type_desc = 'LOG'
 
-
+DBCC SHRINKFILE (AIMSPRODWB_log, 3)
+        
+```
+#References
+- https://www.mssqltips.com/tutorial/how-to-shrink-the-transaction-log/
+- https://www.sqlshack.com/sql-server-transaction-log-backup-truncate-and-shrink-operations/
 
 
 
