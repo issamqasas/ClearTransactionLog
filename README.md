@@ -38,7 +38,7 @@ if you don;t need the logs , just do the following
 
         GO
 
-        DBCC SHRINKFILE (testdb_log, 1)
+        DBCC SHRINKFILE (testdb_log, 3)
 
         GO
 
