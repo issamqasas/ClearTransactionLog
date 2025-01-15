@@ -72,7 +72,7 @@ then select the file type :- log
  ```sql
 SELECT name FROM sys.master_files WHERE type_desc = 'LOG'
 
-DBCC SHRINKFILE (AIMSPRODWB_log, 3)
+DBCC SHRINKFILE (testdb_log, 3)
         
 ```
 # References
